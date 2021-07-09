@@ -12,6 +12,8 @@ pip install MultiLanguage
 ```
 ```python
 from MultiLanguage.MultiLanguage import *
+
+
 LanguageAdder.add("database.json", [("english", "pumpkin"), ("korean": "호박")])
 LanguageAccessorFactory.create("database.json", "pumpkin").get("korean") # 호박
 ```
