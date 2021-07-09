@@ -53,10 +53,10 @@ class LanguageAdder:
             file_write.write(json.dumps(language_db, ensure_ascii=False))
 
 
-database_file = "./database.json"
+database_file = "../database.json"
 sys.argv.pop(0)
 if sys.argv[0] == "--database" and len(sys.argv) >= 2 and os.path.isfile(sys.argv[1]):
-    database_file = "./database.json"
+    database_file = "../database.json"
     sys.argv.pop(0)
     sys.argv.pop(0)
 elif sys.argv[0] == "--database" and len(sys.argv) >= 2 and not os.path.isfile(sys.argv[1]):
